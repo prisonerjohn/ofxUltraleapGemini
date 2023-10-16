@@ -22,6 +22,8 @@ public:
 	void windowResized(int w, int h);
 	void dragEvent(ofDragInfo dragInfo);
 	void gotMessage(ofMessage msg);
+    
+    void renderBone(const ofxUltraleapGemini::Bone& bone, const ofFloatColor& color);
 
 	ofxUltraleapGemini::Connection connection;
 

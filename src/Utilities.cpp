@@ -106,12 +106,10 @@ namespace ofxUltraleapGemini
 		return Digit 
 		{ 
 			d.finger_id,
-			{ 
-				toOf(d.metacarpal),
-				toOf(d.proximal),
-				toOf(d.intermediate),
-				toOf(d.distal)
-			},
+            toOf(d.metacarpal),
+            toOf(d.proximal),
+            toOf(d.intermediate),
+            toOf(d.distal),
 			d.is_extended
 		};
 	}

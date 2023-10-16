@@ -18,18 +18,12 @@ namespace ofxUltraleapGemini
 	{
 		int32_t id;
 
-		union 
-		{
-			struct
-			{
-				Bone metacarpal;
-				Bone proximal;
-				Bone intermediate;
-				Bone distal;
-			};
-			Bone bones[4];
-		};
 
+        Bone metacarpal;
+        Bone proximal;
+        Bone intermediate;
+        Bone distal;
+        
 		uint32_t extended;
 	};
 

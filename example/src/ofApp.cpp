@@ -45,26 +45,10 @@ void ofApp::draw()
 				for (int d = 0; d < 5; ++d) 
 				{
 					auto & digit = hand->getDigits()[d];
-					for (int b = 0; b < 4; ++b) 
-					{
-						auto & bone = digit.bones[b];
-
-						glm::mat4 xform;
-						xform *= glm::translate(bone.jointPrev);
-						xform *= glm::toMat4(bone.rotation);
-						xform *= glm::eulerAngleX(ofDegToRad(90));
-
-						ofPushMatrix();
-						ofMultMatrix(xform);
-						{
-							ofSetColor(colors[b]);
-							ofDrawCylinder(bone.width * 0.5f, glm::distance(bone.jointNext, bone.jointPrev));
-						}
-						ofPopMatrix();
-
-						ofSetColor(colors[b]);
-						ofDrawLine(bone.jointPrev, bone.jointNext);
-					}
+                    this->renderBone(digit.metacarpal, colors[0]);
+                    this->renderBone(digit.proximal, colors[1]);
+                    this->renderBone(digit.intermediate, colors[2]);
+                    this->renderBone(digit.distal, colors[3]);
 				}
 			}
 		}
@@ -89,6 +73,25 @@ void ofApp::draw()
 			currY += 60;
 		}
 	}
+}
+
+void ofApp::renderBone(const ofxUltraleapGemini::Bone& bone, const ofFloatColor& color)
+{
+    glm::mat4 xform;
+    xform *= glm::translate(bone.jointPrev);
+    xform *= glm::toMat4(bone.rotation);
+    xform *= glm::eulerAngleX(ofDegToRad(90));
+
+    ofPushMatrix();
+    ofMultMatrix(xform);
+    {
+        ofSetColor(color);
+        ofDrawCylinder(bone.width * 0.5f, glm::distance(bone.jointNext, bone.jointPrev));
+    }
+    ofPopMatrix();
+
+    ofSetColor(color);
+    ofDrawLine(bone.jointPrev, bone.jointNext);
 }
 
 //--------------------------------------------------------------

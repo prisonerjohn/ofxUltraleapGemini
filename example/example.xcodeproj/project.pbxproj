@@ -1,0 +1,410 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 54;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		"02760A7F-9D54-42F3-B320-D4A46FA256F9" /* Connection.cpp in Sources */ = {isa = PBXBuildFile; fileRef = "6A1DE141-7588-494C-945C-28282B94BABC" /* Connection.cpp */; };
+		"8A6E72EA-5408-4458-9041-62CCC75D08F7" /* Hand.cpp in Sources */ = {isa = PBXBuildFile; fileRef = "C8900CCE-C17E-460C-AD3B-E448735F4C4E" /* Hand.cpp */; };
+		"A1026AAF-24A4-4B22-9FDF-4792A7FD85AF" /* Device.cpp in Sources */ = {isa = PBXBuildFile; fileRef = "8F6CE5D6-A417-4A5D-AFC5-183912D9F846" /* Device.cpp */; };
+		E4B69E200A3A1BDC003C02F2 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4B69E1D0A3A1BDC003C02F2 /* main.cpp */; };
+		E4B69E210A3A1BDC003C02F2 /* ofApp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4B69E1E0A3A1BDC003C02F2 /* ofApp.cpp */; };
+		F30467C62ADD825000B92B88 /* libLeapC.5.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = F30467C52ADD825000B92B88 /* libLeapC.5.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		F30467C82ADD825800B92B88 /* libLeapC.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = F30467C72ADD825800B92B88 /* libLeapC.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		"F45BF35C-5E6B-46FB-93D7-DE0C4B07B031" /* Utilities.cpp in Sources */ = {isa = PBXBuildFile; fileRef = "C3382C33-6352-486E-AE11-DB1C9574B6F5" /* Utilities.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		E4C2427710CC5ABF004149E2 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				F30467C62ADD825000B92B88 /* libLeapC.5.dylib in CopyFiles */,
+				F30467C82ADD825800B92B88 /* libLeapC.dylib in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		191CD6FA2847E21E0085CBB6 /* of.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = of.entitlements; sourceTree = "<group>"; };
+		191EF70929D778A400F35F26 /* openFrameworks */ = {isa = PBXFileReference; lastKnownFileType = folder; name = openFrameworks; path = ../../../libs/openFrameworks; sourceTree = SOURCE_ROOT; };
+		"48FB708E-2A36-44BC-9E3A-23FCFBC32CEB" /* ofxUltraleapGemini.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = ofxUltraleapGemini.h; path = ../../../addons/ofxUltraleapGemini/src/ofxUltraleapGemini.h; sourceTree = SOURCE_ROOT; };
+		"6A1DE141-7588-494C-945C-28282B94BABC" /* Connection.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = Connection.cpp; path = ../../../addons/ofxUltraleapGemini/src/Connection.cpp; sourceTree = SOURCE_ROOT; };
+		"7D040DF8-2B3E-44F9-80AF-528B82D2B97A" /* libLeapC.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libLeapC.dylib; path = ../../../addons/ofxUltraleapGemini/libs/LeapSDK/lib/osx/libLeapC.dylib; sourceTree = SOURCE_ROOT; };
+		"8F6CE5D6-A417-4A5D-AFC5-183912D9F846" /* Device.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = Device.cpp; path = ../../../addons/ofxUltraleapGemini/src/Device.cpp; sourceTree = SOURCE_ROOT; };
+		"8FE43F83-BC9C-4336-BD6A-FBF56F5B8AAD" /* Connection.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = Connection.h; path = ../../../addons/ofxUltraleapGemini/src/Connection.h; sourceTree = SOURCE_ROOT; };
+		"AC76E154-480C-45D2-98FB-0C2577B86689" /* Utilities.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = Utilities.h; path = ../../../addons/ofxUltraleapGemini/src/Utilities.h; sourceTree = SOURCE_ROOT; };
+		"AD1417DC-B80D-4C55-96CE-C4334FD71A8F" /* libLeapC.5.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libLeapC.5.dylib; path = ../../../addons/ofxUltraleapGemini/libs/LeapSDK/lib/osx/libLeapC.5.dylib; sourceTree = SOURCE_ROOT; };
+		"B0E088EF-B45C-47D4-A240-47BE7F1EF2C5" /* Hand.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = Hand.h; path = ../../../addons/ofxUltraleapGemini/src/Hand.h; sourceTree = SOURCE_ROOT; };
+		"B5890652-CAD9-42DA-B59D-633BA9B60152" /* Device.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = Device.h; path = ../../../addons/ofxUltraleapGemini/src/Device.h; sourceTree = SOURCE_ROOT; };
+		"C3382C33-6352-486E-AE11-DB1C9574B6F5" /* Utilities.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = Utilities.cpp; path = ../../../addons/ofxUltraleapGemini/src/Utilities.cpp; sourceTree = SOURCE_ROOT; };
+		"C8900CCE-C17E-460C-AD3B-E448735F4C4E" /* Hand.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = Hand.cpp; path = ../../../addons/ofxUltraleapGemini/src/Hand.cpp; sourceTree = SOURCE_ROOT; };
+		"DE4EE076-2929-4B8B-89D4-FA0A553E517B" /* LeapC.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = LeapC.h; path = ../../../addons/ofxUltraleapGemini/libs/LeapSDK/include/LeapC.h; sourceTree = SOURCE_ROOT; };
+		E4B69B5B0A3A1756003C02F2 /* exampleDebug.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = exampleDebug.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E4B69E1D0A3A1BDC003C02F2 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = main.cpp; path = src/main.cpp; sourceTree = SOURCE_ROOT; };
+		E4B69E1E0A3A1BDC003C02F2 /* ofApp.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = ofApp.cpp; path = src/ofApp.cpp; sourceTree = SOURCE_ROOT; };
+		E4B69E1F0A3A1BDC003C02F2 /* ofApp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ofApp.h; path = src/ofApp.h; sourceTree = SOURCE_ROOT; };
+		E4B6FCAD0C3E899E008CF71C /* openFrameworks-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "openFrameworks-Info.plist"; sourceTree = "<group>"; };
+		E4EB6923138AFD0F00A09F29 /* Project.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Project.xcconfig; sourceTree = "<group>"; };
+		F30467C52ADD825000B92B88 /* libLeapC.5.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libLeapC.5.dylib; path = ../libs/LeapSDK/lib/osx/libLeapC.5.dylib; sourceTree = "<group>"; };
+		F30467C72ADD825800B92B88 /* libLeapC.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libLeapC.dylib; path = ../libs/LeapSDK/lib/osx/libLeapC.dylib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E4B69B590A3A1756003C02F2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		"0704A8D5-94CD-40C9-AC0A-072866FE171A" /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				"4D1033E4-3AA1-4079-84FA-D0A2E9083CC9" /* osx */,
+			);
+			name = lib;
+			sourceTree = SOURCE_ROOT;
+		};
+		"1C565657-9378-4CB3-A458-9D8E5871BA6F" /* libs */ = {
+			isa = PBXGroup;
+			children = (
+				"A823B84D-1EE4-4872-86F2-27134A2A1823" /* LeapSDK */,
+			);
+			name = libs;
+			sourceTree = SOURCE_ROOT;
+		};
+		"4D1033E4-3AA1-4079-84FA-D0A2E9083CC9" /* osx */ = {
+			isa = PBXGroup;
+			children = (
+				"AD1417DC-B80D-4C55-96CE-C4334FD71A8F" /* libLeapC.5.dylib */,
+				"7D040DF8-2B3E-44F9-80AF-528B82D2B97A" /* libLeapC.dylib */,
+			);
+			name = osx;
+			sourceTree = SOURCE_ROOT;
+		};
+		"569B6144-BB44-492A-B067-40608384E36F" /* ofxUltraleapGemini */ = {
+			isa = PBXGroup;
+			children = (
+				"1C565657-9378-4CB3-A458-9D8E5871BA6F" /* libs */,
+				"B1D5E6D3-377C-4D7D-80C1-EB0030930A61" /* src */,
+			);
+			name = ofxUltraleapGemini;
+			sourceTree = SOURCE_ROOT;
+		};
+		"A823B84D-1EE4-4872-86F2-27134A2A1823" /* LeapSDK */ = {
+			isa = PBXGroup;
+			children = (
+				"0704A8D5-94CD-40C9-AC0A-072866FE171A" /* lib */,
+				"F91F4779-C950-4A01-9A89-450A97809EEC" /* include */,
+			);
+			name = LeapSDK;
+			sourceTree = SOURCE_ROOT;
+		};
+		"B1D5E6D3-377C-4D7D-80C1-EB0030930A61" /* src */ = {
+			isa = PBXGroup;
+			children = (
+				"6A1DE141-7588-494C-945C-28282B94BABC" /* Connection.cpp */,
+				"8FE43F83-BC9C-4336-BD6A-FBF56F5B8AAD" /* Connection.h */,
+				"8F6CE5D6-A417-4A5D-AFC5-183912D9F846" /* Device.cpp */,
+				"B5890652-CAD9-42DA-B59D-633BA9B60152" /* Device.h */,
+				"C8900CCE-C17E-460C-AD3B-E448735F4C4E" /* Hand.cpp */,
+				"B0E088EF-B45C-47D4-A240-47BE7F1EF2C5" /* Hand.h */,
+				"C3382C33-6352-486E-AE11-DB1C9574B6F5" /* Utilities.cpp */,
+				"AC76E154-480C-45D2-98FB-0C2577B86689" /* Utilities.h */,
+				"48FB708E-2A36-44BC-9E3A-23FCFBC32CEB" /* ofxUltraleapGemini.h */,
+			);
+			name = src;
+			path = ../../../addons/ofxUltraleapGemini/src;
+			sourceTree = SOURCE_ROOT;
+		};
+		BB4B014C10F69532006C3DED /* addons */ = {
+			isa = PBXGroup;
+			children = (
+				"569B6144-BB44-492A-B067-40608384E36F" /* ofxUltraleapGemini */,
+			);
+			name = addons;
+			path = ../../../addons;
+			sourceTree = "<group>";
+		};
+		E4B69B4A0A3A1720003C02F2 = {
+			isa = PBXGroup;
+			children = (
+				F30467C72ADD825800B92B88 /* libLeapC.dylib */,
+				F30467C52ADD825000B92B88 /* libLeapC.5.dylib */,
+				191CD6FA2847E21E0085CBB6 /* of.entitlements */,
+				E4B6FCAD0C3E899E008CF71C /* openFrameworks-Info.plist */,
+				E4EB6923138AFD0F00A09F29 /* Project.xcconfig */,
+				E4B69E1C0A3A1BDC003C02F2 /* src */,
+				191EF70929D778A400F35F26 /* openFrameworks */,
+				BB4B014C10F69532006C3DED /* addons */,
+				E4B69B5B0A3A1756003C02F2 /* exampleDebug.app */,
+				F30467BE2ADD7A3100B92B88 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		E4B69E1C0A3A1BDC003C02F2 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				E4B69E1D0A3A1BDC003C02F2 /* main.cpp */,
+				E4B69E1E0A3A1BDC003C02F2 /* ofApp.cpp */,
+				E4B69E1F0A3A1BDC003C02F2 /* ofApp.h */,
+			);
+			path = src;
+			sourceTree = SOURCE_ROOT;
+		};
+		F30467BE2ADD7A3100B92B88 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		"F91F4779-C950-4A01-9A89-450A97809EEC" /* include */ = {
+			isa = PBXGroup;
+			children = (
+				"DE4EE076-2929-4B8B-89D4-FA0A553E517B" /* LeapC.h */,
+			);
+			name = include;
+			path = ../../../addons/ofxUltraleapGemini/libs/LeapSDK/include;
+			sourceTree = SOURCE_ROOT;
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E4B69B5A0A3A1756003C02F2 /* example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E4B69B5F0A3A1757003C02F2 /* Build configuration list for PBXNativeTarget "example" */;
+			buildPhases = (
+				E42962A92163ECCD00A6A9E2 /* Run Script — Compile OF */,
+				E4B69B580A3A1756003C02F2 /* Sources */,
+				E4B69B590A3A1756003C02F2 /* Frameworks */,
+				E4C2427710CC5ABF004149E2 /* CopyFiles */,
+				19B789C429E5AB4A0082E9B8 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = example;
+			productName = myOFApp;
+			productReference = E4B69B5B0A3A1756003C02F2 /* exampleDebug.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E4B69B4C0A3A1720003C02F2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+			};
+			buildConfigurationList = E4B69B4D0A3A1720003C02F2 /* Build configuration list for PBXProject "example" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E4B69B4A0A3A1720003C02F2;
+			productRefGroup = E4B69B4A0A3A1720003C02F2;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E4B69B5A0A3A1756003C02F2 /* example */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		19B789C429E5AB4A0082E9B8 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"$OF_PATH/scripts/osx/xcode_project.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E42962A92163ECCD00A6A9E2 /* Run Script — Compile OF */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Run Script — Compile OF";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "echo \"💾 Compiling Openframeworks\"\nxcodebuild -project \"$OF_PATH/libs/openFrameworksCompiled/project/osx/openFrameworksLib.xcodeproj\" -target openFrameworks -configuration \"${CONFIGURATION}\"  CLANG_CXX_LANGUAGE_STANDARD=$CLANG_CXX_LANGUAGE_STANDARD MACOSX_DEPLOYMENT_TARGET=$MACOSX_DEPLOYMENT_TARGET GCC_PREPROCESSOR_DEFINITIONS=$USER_PREPROCESSOR_DEFINITIONS\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E4B69B580A3A1756003C02F2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E4B69E200A3A1BDC003C02F2 /* main.cpp in Sources */,
+				E4B69E210A3A1BDC003C02F2 /* ofApp.cpp in Sources */,
+				"02760A7F-9D54-42F3-B320-D4A46FA256F9" /* Connection.cpp in Sources */,
+				"A1026AAF-24A4-4B22-9FDF-4792A7FD85AF" /* Device.cpp in Sources */,
+				"8A6E72EA-5408-4458-9041-62CCC75D08F7" /* Hand.cpp in Sources */,
+				"F45BF35C-5E6B-46FB-93D7-DE0C4B07B031" /* Utilities.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		E4B69B4E0A3A1720003C02F2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E4EB6923138AFD0F00A09F29 /* Project.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = of.entitlements;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_WARN_UNUSED_VARIABLE = NO;
+				HEADER_SEARCH_PATHS = (
+					"$(OF_CORE_HEADERS)",
+					src,
+				);
+				OTHER_CPLUSPLUSFLAGS = "-D__MACOSX_CORE__";
+			};
+			name = Debug;
+		};
+		E4B69B4F0A3A1720003C02F2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E4EB6923138AFD0F00A09F29 /* Project.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = of.entitlements;
+				COPY_PHASE_STRIP = YES;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_UNROLL_LOOPS = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(OF_CORE_HEADERS)",
+					src,
+				);
+				OTHER_CPLUSPLUSFLAGS = "-D__MACOSX_CORE__";
+			};
+			name = Release;
+		};
+		E4B69B600A3A1757003C02F2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E4EB6923138AFD0F00A09F29 /* Project.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				GCC_DYNAMIC_NO_PIC = NO;
+				HEADER_SEARCH_PATHS = (
+					"$(OF_CORE_HEADERS)",
+					src,
+					src,
+					../../../addons/ofxUltraleapGemini/libs,
+					../../../addons/ofxUltraleapGemini/libs/LeapSDK,
+					../../../addons/ofxUltraleapGemini/libs/LeapSDK/export,
+					../../../addons/ofxUltraleapGemini/libs/LeapSDK/export/vs,
+					../../../addons/ofxUltraleapGemini/libs/LeapSDK/export/vs/x64,
+					../../../addons/ofxUltraleapGemini/libs/LeapSDK/include,
+					../../../addons/ofxUltraleapGemini/libs/LeapSDK/lib,
+					../../../addons/ofxUltraleapGemini/libs/LeapSDK/lib/osx,
+					../../../addons/ofxUltraleapGemini/libs/LeapSDK/lib/vs,
+					../../../addons/ofxUltraleapGemini/libs/LeapSDK/lib/vs/x64,
+					../../../addons/ofxUltraleapGemini/src,
+				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				OTHER_LDFLAGS = (
+					"$(OF_CORE_LIBS)",
+					"$(OF_CORE_FRAMEWORKS)",
+					"$(LIB_OF_DEBUG)",
+					../../../addons/ofxUltraleapGemini/libs/LeapSDK/lib/osx/libLeapC.5.dylib,
+					../../../addons/ofxUltraleapGemini/libs/LeapSDK/lib/osx/libLeapC.dylib,
+				);
+			};
+			name = Debug;
+		};
+		E4B69B610A3A1757003C02F2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E4EB6923138AFD0F00A09F29 /* Project.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				COPY_PHASE_STRIP = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				HEADER_SEARCH_PATHS = (
+					"$(OF_CORE_HEADERS)",
+					src,
+					src,
+					../../../addons/ofxUltraleapGemini/libs,
+					../../../addons/ofxUltraleapGemini/libs/LeapSDK,
+					../../../addons/ofxUltraleapGemini/libs/LeapSDK/export,
+					../../../addons/ofxUltraleapGemini/libs/LeapSDK/export/vs,
+					../../../addons/ofxUltraleapGemini/libs/LeapSDK/export/vs/x64,
+					../../../addons/ofxUltraleapGemini/libs/LeapSDK/include,
+					../../../addons/ofxUltraleapGemini/libs/LeapSDK/lib,
+					../../../addons/ofxUltraleapGemini/libs/LeapSDK/lib/osx,
+					../../../addons/ofxUltraleapGemini/libs/LeapSDK/lib/vs,
+					../../../addons/ofxUltraleapGemini/libs/LeapSDK/lib/vs/x64,
+					../../../addons/ofxUltraleapGemini/src,
+				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				OTHER_LDFLAGS = (
+					"$(OF_CORE_LIBS)",
+					"$(OF_CORE_FRAMEWORKS)",
+					"$(LIB_OF)",
+					../../../addons/ofxUltraleapGemini/libs/LeapSDK/lib/osx/libLeapC.5.dylib,
+					../../../addons/ofxUltraleapGemini/libs/LeapSDK/lib/osx/libLeapC.dylib,
+				);
+				baseConfigurationReference = E4EB6923138AFD0F00A09F29;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E4B69B4D0A3A1720003C02F2 /* Build configuration list for PBXProject "example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E4B69B4E0A3A1720003C02F2 /* Debug */,
+				E4B69B4F0A3A1720003C02F2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E4B69B5F0A3A1757003C02F2 /* Build configuration list for PBXNativeTarget "example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E4B69B600A3A1757003C02F2 /* Debug */,
+				E4B69B610A3A1757003C02F2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E4B69B4C0A3A1720003C02F2 /* Project object */;
+}

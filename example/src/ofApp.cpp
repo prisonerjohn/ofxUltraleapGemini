@@ -70,6 +70,25 @@ void ofApp::draw()
 		}
 	}
 	this->cam.end();
+
+	ofSetColor(255);
+
+	int currY = 20;
+	const auto & devices = this->connection.getDevices();
+	for (auto dp : devices)
+	{
+		auto device = dp.second;
+		for (auto hp : device->getHands())
+		{
+			auto hand = hp.second;
+			std::ostringstream oss;
+			oss << "Hand " << (hand->getType() == eLeapHandType_Left ? "LEFT" : "RIGHT") << std::endl
+				<< "Pinch Distance = " << ofToString(hand->getPinchDistance(), 2) << ", Strength = " << ofToString(hand->getPinchStrength(), 2) << std::endl
+				<< "Grab Distance = " << ofToString(hand->getGrabAngle(), 2) << ", Strength = " << ofToString(hand->getGrabStrength(), 2);
+			ofDrawBitmapString(oss.str(), 10, currY);
+			currY += 60;
+		}
+	}
 }
 
 //--------------------------------------------------------------

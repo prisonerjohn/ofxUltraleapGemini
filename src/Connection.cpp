@@ -127,8 +127,6 @@ namespace ofxUltraleapGemini
 					//discard unknown message types
 					//ofLogWarning(__FUNCTION__) << "Unhandled message type " << msg.type;
 			}
-
-			this->sleep(1 / 90.0f * 1000);
 		}
 	}
 

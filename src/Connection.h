@@ -27,9 +27,6 @@ namespace ofxUltraleapGemini
 		void threadedFunction() override;
 
 	private:
-		std::string getResultString(eLeapRS result);
-		std::string getStatusString(eLeapDeviceStatus status);
-
 		void onConnection(const LEAP_CONNECTION_EVENT * event);
 		void onConnectionLost(const LEAP_CONNECTION_LOST_EVENT * event);
 

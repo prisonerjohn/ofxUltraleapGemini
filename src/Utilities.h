@@ -44,6 +44,9 @@ namespace ofxUltraleapGemini
 		float width;
 	};
 
+	std::string getResultString(eLeapRS result);
+	std::string getStatusString(eLeapDeviceStatus status);
+
 	glm::vec3 toOf(LEAP_VECTOR v);
 	glm::quat toOf(LEAP_QUATERNION q);
 
